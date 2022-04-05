@@ -1,0 +1,21 @@
+{
+  "name": "page-transitions-with-highway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --watch & esbuild ./src/main.js --outfile=_site/main.js --bundle --watch",
+    "build": "eleventy && esbuild ./src/main.js --outfile=_site/main.js --bundle"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "esbuild": "^0.14.29",
+    "gsap": "^3.9.1"
+  }
+}

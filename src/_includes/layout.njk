@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Transitions with Highway.js & 11ty</title>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body>
+    <div data-router-wrapper>
+      <div data-router-view="global" data-template="{{ template }}">
+        {% include "components/nav.njk" %}
+        
+        <main>
+          {{ content | safe }}
+        </main>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

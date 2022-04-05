@@ -1,0 +1,21 @@
+# Output directories
+dist/
+public/
+_site
+.cache
+
+# Dependency directories
+node_modules
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.DS_Store
+
+# Netlify
+.netlify
